@@ -1,0 +1,769 @@
+body{
+  margin:0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #DEE9FF;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1.5% 3%;
+  align-items: center;
+}
+nav ul{
+  display: flex;
+  gap:1.5rem;
+  flex-wrap: wrap;
+  box-align:center;
+  list-style: none;
+}
+li a{
+  text-decoration: none;
+  color: black;
+}
+li a:hover{
+  text-decoration: underline;
+  color: #D64779;
+  position: relative;
+  bottom: 3px;
+  font-weight: 700;
+}
+.log-in a{
+  width:130px;
+  height:40px;
+  border-radius: 1em;
+  border: none;
+  color: white;
+  background-color:#1364FF ;
+  cursor:pointer;
+  transition:.3s ease;
+  padding: 0.7em 1em;
+}
+.log-in a:hover{
+  background: #D64779;
+  color: #DEE9FF;
+}
+
+nav div img{
+  width: 50px;
+  height: 50px;
+}
+.logo{
+  color: #1364FF;
+  display: flex;
+  gap: 0.3em;
+  font-weight: 700;
+  font-size: 1.3em;
+  align-items: center;
+
+}
+.simple{
+  color:#BCBCBC ;
+  font-weight: 400;
+  font-size: 0.7em;
+}
+.description p{
+  margin: 0px;
+}
+.introduction{
+  display: flex;
+  justify-content: space-between;
+  background: #DEE9FF;
+}
+.introduction img{
+  width: 40%;
+  padding: 1.5%  3%;
+  margin-bottom: 0px;
+  max-height: 550px;
+  padding-bottom: 0%;
+  border-radius: 10%;
+
+}
+.content h1{
+  color: #D64779;
+}
+.content h2{
+  font-size: 4em;
+}
+.introduction .content{
+  padding: 3% 15%;
+}
+.content h2{
+  margin: 0px;
+}
+.content p{
+  color: #7A7A7A;
+}
+.customers-photo img{
+  height: 50px;
+  width: 50px;
+}
+.customers-photo{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0px;
+  justify-content: start;
+}
+.customers-photo ul{
+  list-style: none;
+
+}
+.customers-photo h3{
+  color: #D64779;
+  font-weight: 900;
+  margin: 0px;
+}
+.customers-photo p{
+  margin: 0px;
+  color: #7A7A7A;
+}
+.customers-photo div{
+  margin-left: 0.5rem;
+}
+.margin{
+  margin: 3rem 0px;
+  line-height: 1.3rem;
+
+}
+.beautiful{
+  display: block;
+  margin-top: auto;
+}
+.customers-photo ul{
+  position: relative;
+  flex: 1;
+  display: flex;
+  padding: 0px;
+}
+.customers-photo div{
+  flex: 1;
+}
+.customers-photo ul li img{
+  padding: 0px;
+}
+.customers-photo ul li .a {
+  position:absolute;
+  top: 0px;
+  bottom: 0px;
+  left:30px;
+  z-index: 4;
+  flex: 1;
+}
+.customers-photo ul li .b {
+  position:absolute;
+  top: 0px;
+  left:60px;
+  z-index: 3;
+  flex: 1;
+}
+.customers-photo ul li .c {
+  position:absolute;
+  top: 0px;
+  left:90px;
+  z-index: 2;
+  flex: 1;
+}
+.customers-photo ul li .d {
+  position:absolute;
+  top: 0px;
+  left:120px;
+  z-index: 1;
+  flex: 1;
+}
+.offers ul{
+  display: flex;
+  gap: 5%;
+  list-style: none;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 0px;
+}
+.offers ul li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0.5rem; /* Adjusted padding */
+}
+.bold{
+  font-weight: 1000;
+  font-size: 2em;
+  margin-bottom: 0.5rem; /* Adjusted margin */
+}
+.grey{
+  font-weight:700;
+  color: #7A7A7A;
+  margin-top: 0.5rem; /* Adjusted margin */
+}
+.offers-plus{
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+}
+.Extra{
+  background: #DEE9FF;
+  display: flex;
+  padding: 0.5rem; /* Adjusted padding */
+}
+.Extra,.first{
+  flex: 1;
+  border: none;
+  border-radius: 3%;
+
+  box-sizing: border-box;
+}
+.Extra img{
+  width: 30%;
+  margin-top: -35px;
+}
+.bold span{
+  color:#1364FF ;
+}
+.first div{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/*.first{
+  background-image: url("boy-wearing-white-face-mask-new-normal-fashion-shoot-with-design-space.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}*/
+.first{
+  background: #1364FF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2%;
+  color: white;
+  font-weight: 900;
+}
+.first button{
+  padding: 10px 17px;
+  background: white;
+  border: none;
+  border-radius: 17px;
+  font-weight: 700;
+  color: black;
+  margin-left: auto;
+}
+.big{
+  font-size: 2rem;
+}
+.first img{
+  margin-left: auto;
+}
+.Essentials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  margin-bottom: 5%;
+
+}
+/*.Essentials h5,.Essentials div,.Essentials button{
+  flex: 1;
+}*/
+.Essentials button{
+  border-radius: 50%;
+  background: transparent;
+  border: 3px #EDEDED solid;
+  box-sizing:border-box;
+  margin-left: auto;
+  padding: 70px 70px;
+  font-weight:900;
+  font-size: 1.25rem;
+
+}
+.Essentials h5{
+  margin-bottom: auto;
+  color: #D64779;
+  font-weight: 1000;
+  text-align: center;
+}
+.Essentials div{
+  max-width: 40%;
+}
+.Featured,.offers-plus,.offers,.why{
+  margin: 7%;
+}
+.Essentials button:hover{
+  border: 3px #D64779 solid;
+  text-decoration: underline;
+  color: #D64779;
+  box-shadow: 10px 10px 5px #D64779;
+}
+.Products{
+  display: flex;
+  gap: 5%;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 7%;
+}
+.Product img{
+  height: 50%;
+  width: 100%;
+}
+.Product{
+  background: #DEE9FF;
+  padding: 3%;
+  border-radius: 10%;
+  flex: 1;
+  min-height: 50%;
+  max-height:50%;
+  position: relative;
+  border: none;
+}
+.Product:hover{
+  border: 2px solid #1364FF;
+  box-shadow: 10px 10px 5px #1364FF;
+}
+.bold1{
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+.Product button,.service button{
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  padding: 5%;
+  border-radius: 50%;
+  background: transparent;
+  border: none;
+
+}
+.Product:hover button{
+ background: #1364FF;
+  color: white;
+}
+.Product:hover p{
+  color: #D64779;
+}
+.Product span{
+  text-decoration: line-through;
+}
+.categories{
+  display: grid;
+  grid-template-columns:repeat(6,1fr);
+  grid-template-rows: repeat(2,1fr);
+  gap: 2.5%;
+}
+.item{
+  padding: 5%;
+  border-radius: 10%;
+}
+.Pain{
+  grid-column: span 2;
+  grid-row: span 1;
+}
+.Allergy{
+  grid-column: span 4;
+  grid-row: span 1;
+}
+.Dental{
+  grid-row: span 1;
+  grid-column: span 4;
+}
+.Aid{
+  grid-column: span 2;
+  grid-row: span 1;
+}
+.categories img{
+  width: 100%;
+  border-radius: 10%;
+} 
+.categories h3{
+  font-weight: 1000;
+  font-size: 1.5rem;
+  color: #1364FF;
+
+}
+.categories a{
+  color: #1364FF;
+  font-weight:700;
+  font-size: 1.25rem;
+
+}
+.categories div:hover a{
+  color: #D64779;
+}
+.categories div:hover h3{
+  color: #D64779;
+}
+.categories div{
+  transition: transform 0.7s cubic-bezier(0.25,1,0.5,1), box-shadow 0.7s ease();
+}
+.categories div:hover{
+  transform: scale(1.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.why-us{
+  display: flex;
+  align-items: center;
+  gap:3% ;
+  margin-top: 7%;
+}
+.our{
+  width: 30%;
+  margin-left:auto ;
+}
+.why-us ul img{
+  background:#1364FF;
+  padding: 20px 20px;
+  border-radius: 5%;
+}
+.why-us ul li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+
+}
+.why-us h5{
+  margin-bottom: auto;
+  color: #D64779;
+  font-weight: 1000;
+  width: 10%;
+}
+.our{
+  box-shadow: 10px 10px 5px 12px #DEE9FF;
+  border-radius: 2%;
+  border: 3px solid #DEE9FF;
+}
+.why-us h3{
+  color: #D64779;
+  font-weight: 1000;
+}
+.edit{
+  margin: 7%;
+  padding: 5% 0;
+}
+.services{
+  background: #1364FF;
+  color: white;
+}
+.services p,.services h5{
+ color: #BCBCBC;
+}
+.services button{
+  color: #BCBCBC;
+}
+.services button:hover{
+  border: 3px #BCBCBC solid;
+  text-decoration: underline;
+  color: #BCBCBC;
+  box-shadow: 10px 10px 5px #BCBCBC ;
+
+}
+#hello:hover{
+  color: #BCBCBC;
+}
+.all-service{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 10%;
+}
+.all-service .service{
+  width: 30%;
+}
+.all-service .service img{
+  width: 100%;
+  border-radius: 30px;
+}
+.service{
+  position: relative;
+}
+.service button{
+  color: black;
+}
+.service:hover button{
+  background: #D64779;
+  color: white;
+}
+.services .edit{
+  margin-bottom: 0px;
+}
+.Team h2 span{
+  color: #D64779;
+}
+.Doctors{
+  display: flex;
+  list-style-type:none;
+  gap: 0.3%;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+.Doctors li {
+  padding: 1.5rem;
+}
+.Doctors li img{
+  width: 95%;
+  height: 30%;
+  background: #DEE9FF;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.title{
+  max-width: 50%;
+  color: #7A7A7A;
+  padding: 10px 10px;
+  border: 1px solid #7A7A7A;
+  font-size: 0.7rem;
+  font-weight: 1000;
+  text-align: center;
+  border-radius:2rem ;
+}
+.who{
+  font-weight: 900;
+  font-size: 1.25rem;
+}
+.exp{
+  color: #7A7A7A;
+  font-weight: 900;
+}
+.Doctors li{
+  position: relative;
+}
+.Doctors button{
+  position: absolute;
+  top: 2rem;
+  right: 3.5rem;
+  padding: 15px;
+  border-radius: 50%;
+  border: none;
+  background: none;
+}
+.Doctors li:hover{
+    box-shadow: 0px 15px #DEE9FF;
+}
+.Doctors li:hover button{
+  background: #D64779;
+  color: white;
+}
+.Doctors li:hover .title{
+  background: #D64779;
+  color: #DEE9FF;
+}
+.Doctors li:hover .exp{
+  color:#D64779;
+}
+.contact{
+    display: flex;
+    gap: 10%;
+    align-items: center;
+    margin: 10px ;
+    
+    
+}
+.call{
+    color: white;
+    background-color: black;
+    padding: 20px 40px;
+    margin-left: 250px;
+    border-radius: 10px;
+    width: 370px;
+    
+}
+
+
+.contact img{
+    width: 330px; 
+    height: 220px;
+    border-radius: 10px;
+}
+footer{
+    background-color: #1364FF;
+    color: white;
+    font-family: Verdana ;
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+}
+.name{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.name img{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    background: #1364FF;
+    
+    
+}
+.name p{
+   margin: 0; 
+}
+.pharmacy{
+    font-size: 24px;
+    color: white;
+}
+.store {
+    font-size: 12px;
+    color: #BCBCBC;
+}
+.container {
+    display: flex;
+    padding: 20px 0;
+    margin: 40px 0;
+    position: relative;
+}
+.container::before,
+.container::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0.1px;
+    background-color: #BCBCBC;
+}
+.container::before {
+    top: 0;
+}
+.container::after {
+    bottom: 0;
+}
+.Company{
+    justify-content: right;
+    list-style: none;
+    font-size: 24px;
+}
+.Resources{
+    justify-content: left;
+    list-style: none;
+    font-size: 24px;
+}
+.element {
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 100;
+    font-size: 14px; 
+    color: white; 
+    margin:10px 0;    
+}
+.bottom{
+    display: flex;
+    justify-content:space-between;
+    color: #EDEDED;
+    font-size: 12px;
+}
+.name .Icon{
+    margin-left: auto;
+}
+.name-text h1,.name-text p{
+    margin: 0;
+}
+.caller,.email{
+    margin:10% 0 ;
+}
+.name:hover .Icon{
+    color: #1364FF;
+}
+.arrow{
+    color: black;
+    text-align: center;
+    background-color: white;
+    padding: 20px 20px;
+    border-radius: 50%;
+    font-size: 1,5em;
+
+}
+.Essentials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    margin-bottom: 5%;
+  
+  }
+  /*.Essentials h5,.Essentials div,.Essentials button{
+    flex: 1;
+  }*/
+
+  .Essentials h5{
+    margin-bottom: auto;
+    color: #D64779;
+    font-weight: 1000;
+    text-align: center;
+  }
+  .Essentials div{
+    max-width: 40%;
+  }
+  .Featured,.offers-plus,.offers{
+    margin: 7%;
+  }
+  .Products{
+    display: flex;
+    gap: 5%;
+    width: 100%;
+  }
+  .Product img{
+    width: 70%;
+    height: 50%;
+  }
+ 
+.Essentials img{
+    margin-left: auto;
+}
+.tete{
+    margin-bottom: 2%;
+}
+.contact{
+    margin-top: 2%;
+}
+.Featured,.offers-plus,.offers{
+    margin: 7%;
+  }
+.Essentials button:hover{
+    border: 3px #1364FF solid;
+    text-decoration: underline;
+    color: #1364FF;
+  }
+  .Essentials button{
+    border-radius: 50%;
+    background: transparent;
+    border: 3px #EDEDED solid;
+    box-sizing:border-box;
+    margin-left: auto;
+    padding: 7% 7%;
+    font-weight:900;
+  
+  }
+  .Essentials h5{
+    margin-bottom: auto;
+    color: #D64779;
+    font-weight: 1000;
+    text-align: center;
+  }
+  .Essentials div{
+    max-width: 40%;
+  }
+  .Essentials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  margin-bottom: 5%;
+
+}
+.grey{
+    font-weight:100;
+    color: #7A7A7A;
+    margin-top: 1rem;
+  }
+.fin{
+  display: flex;
+  flex-direction: column;
+  margin-left:1rem;
+}  
