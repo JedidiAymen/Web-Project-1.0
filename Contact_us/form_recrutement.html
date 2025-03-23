@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact-us</title>
+</head>
+<body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="home-page-images/logo.png" alt="pharmacy_logo.png">
+          <div class="description">
+            <p>Pharmacy</p>
+            <p class="simple">Shop</p>
+         </div>
+
+        </div>
+        <ul>
+           <li><a href="../Home/index.html">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="../Contact_us/form_recrutement.html">Contact Us</a></li>
+          <li class="log-in"><a href="../login/login.html">Log in/Sign-Up</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="contact">
+        <h2>Contact Us for Reclamation & Advice.</h2>
+        <p>Please fill out the form below to contact us.</p>
+        <form action="#" method="POST" enctype="multipart/form-data">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+            <p>Please select your favorite Web language:</p>
+            
+            <label for="Male">Male</label>
+            <input type="radio" id="Male" name="fav_language" value="HTML">        
+            <label for="Female">Female</label>
+            <input type="radio" id="Female" name="fav_language" value="CSS"><br><br>
+
+            <label for="reclamation-type">Select Reclamation Type:</label><br><br>
+            <select id="reclamation-type" name="reclamation-type">
+                <option value="order-issues">Order Issues – (Delayed, missing, or incorrect order.)</option>
+                <option value="product-quality">Product Quality – (Expired, damaged, or ineffective medication.)</option>
+                <option value="prescription-issues">Prescription Issues – (Errors in prescription fulfillment.)</option>
+                <option value="payment-billing">Payment & Billing – (Incorrect charges or payment failures.)</option>
+                <option value="delivery-problems">Delivery Problems – (Issues with home delivery service.)</option>
+                <option value="customer-service">Customer Service – (Poor experience in-store or online.)</option>
+                <option value="website-issues">Website Issues – (Bugs, errors, or ordering difficulties.)</option>
+                <option value="other">Other – (Any other concerns not listed.)</option>
+            </select><br><br>
+
+            <label for="reclamation-message">Message:</label><br><br>
+            <textarea id="reclamation-message" name="reclamation-message" rows="4" placeholder="Describe your issue..."></textarea><br><br>
+
+            <label for="reclamation-attachment">Upload Attachment (PDF/JPG only):</label>
+            <input type="file" id="reclamation-attachment" name="reclamation-attachment" accept=".pdf, .jpg"><br><br>
+
+            <hr>
+
+            <h3>Ask for Advice</h3>
+
+            <label for="advice-type">Select Advice Type:</label><br><br>
+            <select id="advice-type" name="advice-type">
+                <option value="medication-guidance">Medication Guidance – (How to use a specific product.)</option>
+                <option value="side-effects">Side Effects & Interactions – (Possible reactions or drug interactions.)</option>
+                <option value="health-wellness">Health & Wellness – (Nutrition, supplements, and fitness advice.)</option>
+                <option value="product-recommendations">Product Recommendations – (Best products for a specific need.)</option>
+                <option value="first-aid">First Aid & Emergency Care – (Guidance for injuries or symptoms.)</option>
+                <option value="baby-elderly-care">Baby & Elderly Care – (Health concerns for different age groups.)</option>
+                <option value="other">Other – (Any other medical inquiries.)</option>
+            </select><br><br>
+
+            <label for="advice-message">Message:</label><br><br>
+            <textarea id="advice-message" name="advice-message" rows="4" placeholder="Describe your question..."></textarea><br><br>
+
+            <label for="advice-attachment">Upload Attachment (PDF/JPG only):</label>
+            <input type="file" id="advice-attachment" name="advice-attachment" accept=".pdf, .jpg"><br><br>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+</body>
+</html>
+
