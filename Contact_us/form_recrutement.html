@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Contact-us</title>
 </head>
 <body>
@@ -28,27 +29,150 @@
         </ul>
       </nav>
     </header>
-    <section id="contact">
+    <section class="title">
+      <h1> We've got an <span class="oval">entire</span> team dedicated <br>to supporting you and your health</h1>
+      <p>Get help 24/7,with our award-winning support network of health experts</p> 
+      <ul> 
+        <li><button>Book a call </button> </li> 
+      <li><button class="pink"><i class="bi bi-camera-video"></i>Get in touch</button></li>
+      </ul>
+    </section>
+    <section class="team">
+           <div class="gallery-container">
+        <div class="gallery-track">
+            <div class="gallery-item">
+                <img src="Doctors/doc1 (1).png" alt="Nature 1">
+    <div class="image-caption">
+        <p>Dr.Scherbatsky Robin</p>
+        <p>General Doctor</p>
+    </div>
+            </div>
+            <div class="gallery-item">
+                <img src="Doctors/doc6 (1).png" alt="Nature 2">
+<div class="image-caption">
+        <p>Dr.Scherbatsky Robin</p>
+        <p>General Doctor</p>
+    </div>
+     
+            </div>
+            <div class="gallery-item">
+                <img src="Doctors/doc2 (1).png" alt="Nature 3">
+            <div class="image-caption">
+        <p>Dr.Scherbatsky Robin</p>
+        <p>General Doctor</p>
+    </div>
+     
+            </div>
+            <div class="gallery-item">
+                <img src="Doctors/doc7 (1).png" alt="Nature 4">
+<div class="image-caption">
+        <p>Dr.Scherbatsky Robin</p>
+        <p>General Doctor</p>
+    </div>
+     
+            </div>
+            <div class="gallery-item">
+                <img src="Doctors/doc3 (1).png" alt="Nature 5">
+            <div class="image-caption">
+        <p>Dr.Scherbatsky Robin</p>
+        <p>General Doctor</p>
+    </div>
+     
+            </div>
+            <div class="gallery-item">
+                <img src="Doctors/doc13.png" alt="Nature 6">
+<div class="image-caption">
+        <p>Dr.Scherbatsky Robin</p>
+        <p>General Doctor</p>
+    </div>
+     
+            </div>
+          <div class="gallery-item">
+                <img src="Doctors/doc5.png" alt="Nature 6">
+<div class="image-caption">
+        <p>Dr.Scherbatsky Robin</p>
+        <p>General Doctor</p>
+    </div>
+     
+            </div>
+          <div class="gallery-item">
+                <img src="Doctors/doc10.png" alt="Nature 6">
+<div class="image-caption">
+        <p>Dr.Scherbatsky Robin</p>
+        <p>General Doctor</p>
+    </div>
+     
+            </div> 
+          <div class="gallery-item">
+                <img src="Doctors/doc14.png" alt="Nature 6">
+<div class="image-caption">
+        <p>Dr.Scherbatsky Robin</p>
+        <p>General Doctor</p>
+    </div>
+     
+            </div>
+          <div class="gallery-item">
+                <img src="Doctors/doc11.png" alt="Nature 6">
+<div class="image-caption">
+        <p>Dr.Scherbatsky Robin</p>
+        <p>General Doctor</p>
+    </div>
+     
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="purpose">
         <h2>Contact Us for Reclamation & Advice.</h2>
         <p>Please fill out the form below to contact us.</p>
+    </section>
+    <main class="display">
+    <section class="direct">
+      <div>
+      <h5>Call us</h5>
+      <p>call us Mon-Fri from 8 Am to 5 Pm </p>
+      <p><i class="bi bi-telephone-forward-fill"></i>+21621088300</p>
+      </div>
+      <div>
+      <h5>Chat with us</h5>
+      <p>swipe to our friendly team via live chat</p>
+      <ul>
+      <li><i class="bi bi-chat-dots-fill"><a href="#"></i> Start a live chat</a></li>
+      <li><i class="bi bi-telegram"></i><a href="#">Shot us an Email</a></li>
+      <li><i class="bi bi-twitter"></i><a href="#">Message us on Twitter</a></li>
+      </ul>
+      </div>
+      <div>
+      <h5>Visit us</h5>
+      <p>chat to us in person at our Shop</p>
+      <a href="#"><i class="bi bi-geo-alt-fill"></i>Mahdia,Khzema</a>
+      </div>
+    </section>
+    <section id="contact">
+
         <form action="#" method="POST" enctype="multipart/form-data">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required><br><br>
-
+          <div class="name">
+           <div class="form-group">
+            <input type="text" id="name" name="name" required placeholder=" ">
+            <label for="name">Full Name:</label><br>
+           </div>
+           <div class="form-group">
+             <input type="text" id="Last-name" name="Last-name" required placeholder=" ">
+             <label for="Last-name">Last Name:</label>
+           </div>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" required placeholder=" ">
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
+          </div>
+          <div class="form-group">
 
+            <input type="tel" id="phone" name="phone" required placeholder=" ">
             <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" required><br><br>
-            <p>Please select your favorite Web language:</p>
-            
-            <label for="Male">Male</label>
-            <input type="radio" id="Male" name="fav_language" value="HTML">        
-            <label for="Female">Female</label>
-            <input type="radio" id="Female" name="fav_language" value="CSS"><br><br>
-
-            <label for="reclamation-type">Select Reclamation Type:</label><br><br>
+          </div>
+          <div class="form-group">
             <select id="reclamation-type" name="reclamation-type">
+                <option value="" disabled selected></option>
                 <option value="order-issues">Order Issues – (Delayed, missing, or incorrect order.)</option>
                 <option value="product-quality">Product Quality – (Expired, damaged, or ineffective medication.)</option>
                 <option value="prescription-issues">Prescription Issues – (Errors in prescription fulfillment.)</option>
@@ -57,20 +181,21 @@
                 <option value="customer-service">Customer Service – (Poor experience in-store or online.)</option>
                 <option value="website-issues">Website Issues – (Bugs, errors, or ordering difficulties.)</option>
                 <option value="other">Other – (Any other concerns not listed.)</option>
-            </select><br><br>
-
+            </select>
+            <label for="reclamation-type">Select Reclamation Type:</label>
+          </div>
+          <div class="form-group">
+            <textarea id="reclamation-message" name="reclamation-message" rows="4" placeholder=""></textarea>
             <label for="reclamation-message">Message:</label><br><br>
-            <textarea id="reclamation-message" name="reclamation-message" rows="4" placeholder="Describe your issue..."></textarea><br><br>
-
+          </div>
             <label for="reclamation-attachment">Upload Attachment (PDF/JPG only):</label>
-            <input type="file" id="reclamation-attachment" name="reclamation-attachment" accept=".pdf, .jpg"><br><br>
+            <input type="file" id="reclamation-attachment" name="reclamation-attachment" accept=".pdf, .jpg">
+          </section>
+           <section class="advisce">
 
-            <hr>
-
-            <h3>Ask for Advice</h3>
-
-            <label for="advice-type">Select Advice Type:</label><br><br>
+          <div class="form-group">
             <select id="advice-type" name="advice-type">
+               <option value=""></option>
                 <option value="medication-guidance">Medication Guidance – (How to use a specific product.)</option>
                 <option value="side-effects">Side Effects & Interactions – (Possible reactions or drug interactions.)</option>
                 <option value="health-wellness">Health & Wellness – (Nutrition, supplements, and fitness advice.)</option>
@@ -78,18 +203,23 @@
                 <option value="first-aid">First Aid & Emergency Care – (Guidance for injuries or symptoms.)</option>
                 <option value="baby-elderly-care">Baby & Elderly Care – (Health concerns for different age groups.)</option>
                 <option value="other">Other – (Any other medical inquiries.)</option>
-            </select><br><br>
-
-            <label for="advice-message">Message:</label><br><br>
-            <textarea id="advice-message" name="advice-message" rows="4" placeholder="Describe your question..."></textarea><br><br>
-
+            </select>
+            <label for="advice-type">Select Advice Type:</label>
+           </div>
+        <div class="form-group">
+            <textarea id="advice-message" name="advice-message" rows="4" placeholder=" "></textarea>
+            <label for="advice-message">Your question</label>
+        </div>
             <label for="advice-attachment">Upload Attachment (PDF/JPG only):</label>
             <input type="file" id="advice-attachment" name="advice-attachment" accept=".pdf, .jpg"><br><br>
 
-            <button type="submit">Send</button>
-        </form>
+            <button type="submit">Send Message</button>
+          
+      </form>
     </section>
-
+    </main>
+    <script src="index.js">
+    </script>
 </body>
 </html>
 

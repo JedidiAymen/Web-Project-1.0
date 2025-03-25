@@ -1,5 +1,5 @@
 body{
-  margin:0;
+  margin:0px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background: #DEE9FF;
 }
@@ -21,11 +21,11 @@ nav ul{
   box-align:center;
   list-style: none;
 }
-li a{
+nav li a{
   text-decoration: none;
   color: black;
 }
-li a:hover{
+nav li a:hover{
   text-decoration: underline;
   color: #D64779;
   position: relative;
@@ -98,52 +98,6 @@ nav div img{
 .content p{
   color: #7A7A7A;
 }
-#contact{
-  width: 50%;
-  margin: 10px auto;
-}
-option,input{
-  background: transparent;
-  border: 2px #1364FF solid;
-  border-radius: 15px;
-  width: 30%;
-  padding: 3px;
-  color: #7A7A7A;
-}
-input:focus, 
-select:focus, 
-textarea:focus {
-    border: 2px solid #D64779;
-  outline: none;
-}
-label {
-    font-weight: bold;
-    font-size: 16px;
-    color: #D64779;
-    margin-bottom: 5px;
-}
-select,textarea {
-    width: 70%;
-    padding: 10px;
-    font-size: 16px;
-    border: 2px solid #1364FF;
-    border-radius: 10px;
-    background-color: transparent;
-    transition: all 0.3s ease-in-out;
-}
-select:focus {
-    border-color: #D64779;
-    outline: none;
-}
-option {
-    font-size: 14px;
-    padding: 5px;
-    background-color: transparent;
-    color: #7A7A7A;
-}
-select option:checked {
-    color: #D64779;
-}
 button{
   display: block;
   padding: 10px;
@@ -162,6 +116,221 @@ h2,h3{
   color: #1364FF;
   font-weight: 900;
 }
-input[type="radio"]{
+.team {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    padding: 20px;
+}
+
+.gallery-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 30px 0;
+}
+
+.gallery-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+}
+
+.gallery-item {
+    min-width: 250px;
+    height: 350px;
+    margin-right: 15px;
+    flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    filter: grayscale(70%);
+  transform: scale(1);
+  transition: all 0.5s ease;
+}
+.gallery-item img:hover{
+  filter: grayscale(0%);
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0.10, 0, 0.1);
+}
+.image-caption {
+  width:75% ;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    background: whitesmoke;
+    color: #7A7A7A;
+    padding: 10px;
+}
+.image-caption p{
+  margin: 0;
+}
+.display{
+  display: flex;
+width: 75%;
+  gap: 7%;
+  margin: 2% auto;
+}
+.title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title ul{
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+  gap: 1%;
+} 
+.title ul li button{
+  width: 100%;
+  border-radius: 15px;
+  padding: 15px 15px;
+}
+.pink{
+  background: #D64779;
+  color: #DEE9FF;
+  border: none;
+  text-align: center;
+  box-sizing: border-box;
+}
+.name{
+  display: flex;
+}
+.title h1{
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 50px 0px 0px 0px;
+}
+.title p{
+  margin: 15px 0px 0px 0px;
+  font-weight: 500;
+  color: #7A7A7A;
+
+}
+.oval{
+  display: inline-block;
+  padding: 5px 10px;
+  border: 3px solid #D64779;
+  border-radius: 50%;
+  transform: rotate(-10deg);
+}
+i{
+  margin:0px 5px;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+input, select, textarea {
+  width: 70%;
+  padding: 15px;
+  border: 1.7px groove #7A7A7A;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
   background: transparent;
+  transition: all 0.3s ease;
+}
+
+label {
+  position: absolute;
+  left: 12px;
+  top: 15px;
+  color: #7A7A7A;
+  background: #DEE9FF;
+  padding: 0 5px;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #D64779;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label,
+select:focus + label,
+select:valid + label,
+textarea:focus + label,
+textarea:not(:placeholder-shown) + label {
+  top: -10px;
+  font-size: 13px;
+  color: #1364FF;
+}
+select{
+  appearance: none;
+}
+input[type="file"]::file-selector-button{
+  background: transparent;
+  border: none;
+  color: #1364FF;
+  font-weight: 900;
+}
+.purpose{
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 5px;
+}
+.purpose h2,.purpose p{
+  margin:5px;
+}
+.purpose h2{
+  font-weight: 900;
+  font-size: 2rem;
+}
+.purpose p{
+  font-weight: 900;
+  font-size: 1.1rem;
+  color: #7A7A7A;
+}
+.display .direct h5{
+  font-weight: 900;
+  font-size:1.2rem ;
+  margin: 0;
+}
+.display .direct ul{
+  list-style: none;
+  padding: 0;
+}
+.display .direct ul li{
+  margin: 0;
+  padding: 0;
+}
+.display .direct p{
+  font-size: 0.9rem;
+  color: #545454;
+  font-weight: 700;
+  margin: 5px 0;
+}
+.display a{
+  text-decoration: none;
+  color: #7A7A7A;
+  margin-bottom: 7px;
+}
+.direct {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.display button{
+  width: 70%;
 }
