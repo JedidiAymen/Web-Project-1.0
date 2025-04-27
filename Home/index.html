@@ -4,32 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home Page</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
     
 </head>
 <body>
-    <header>
-      <nav id="nav">
+    <head>
+      <nav>
         <div class="logo">
-          <img src="home-page-images/logo.png" alt="pharmacy_logo.png">
+          <i class="bi bi-capsule-pill"></i>
           <div class="description">
             <p>Pharmacy</p>
-            <p class="simple">Shop</p>
-         </div>
-
+            <p class="decoration">Shop</p> </div>
         </div>
-        <ul>
-           <li><a href="index.html">Home</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="../Contact_us/form_recrutement.html">Contact Us</a></li>
-          <li class="log-in"><a href="../login/login.html">Log in/Sign-Up</a></li>
-        </ul>
+        <div class="links-wrapper">
+          <div class="links">
+            <ul>
+              <li class="actual"><a href="../Home/index.html">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="../Products/index.html">Products</a></li>
+              <li><a href="../Contact_us/form_recrutement.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="search">
+          <div class="search-cotainner search-bar">
+            <form>
+              <input type="text" placeholder="search for anything...">
+              <button type="submit" class="submit"><i class="bi bi-search"></i></button>
+            </form>
+              <button class="login icon"><a href="#"><i class="bi bi-box-arrow-in-right"></i></a></button>
+              <button class="login icon"><a href="#"><i class="bi bi-bag-dash"></i></a></button>
+          </div>
+        </div>
+
       </nav>
-    </header>
+    </head>   
     <main>
       <section class="introduction">
         <div class="content">
@@ -57,28 +69,28 @@
       <section class="offers">
         <ul>
           <li>
-              <img src="home-page-images/truck.svg" alt="truck">
+              <img src="home-page-images/truck (3).svg" alt="truck">
             <div>
               <p class="bold">Free Shipping</p>
               <p class="grey">order over 600$</p>
             </div>
           </li>
           <li>
-              <img src="home-page-images/credit-card.svg" alt="credit-card">
+              <img src="home-page-images/credit-card (1).svg" alt="credit-card">
             <div>
            <p class="bold">Quick Payment</p>
               <p class="grey">100% scure</p>
             </div>
           </li>
           <li>
-            <img src="home-page-images/gift.svg" alt="gift">
+            <img src="home-page-images/gift (1).svg" alt="gift">
             <div>
               <p class="bold">Big Cashback</p>
               <p class="grey">Over 50% Cashback</p>
             </div>
           </li>
           <li>
-            <img src="home-page-images/users.svg" alt="users">
+            <img src="home-page-images/users (1).svg" alt="users">
             <div>
               <p class="bold">24/7 Support</p>
               <p class="grey">Ready for You</p>
@@ -115,59 +127,46 @@
           </div>
         <button>All Products ➔</button>
         </div>
-        <div class="Products">
-          <div class="Product">
-            <img src="home-page-images/Acetaminophen.png" alt="Acetaminophen">
-            <h6 class="bold1">Acetaminophen Pills</h6>
-            <p class="grey">$18.00  <span>$12.00</span></p> 
-            <button>➔</button>
-          </div>
-          <div class="Product">
-            <img src="home-page-images/Adobe Express - file (1).png" alt="Throat-syrup">
-            <h6 class="bold1">Throat Lozengers Syrup</h6>
-            <p class="grey">$18.00  <span>$12.00</span></p>
-            <button>➔</button>
-          </div>
-          <div class="Product">
-            <img src="home-page-images/B6+.png"   alt="Acetaminophen">
-            <h6 class="bold1">Multivitamin B6+</h6>
-            <p class="grey">$18.00  <span>$12.00</span></p>
-            <button>➔</button>
-          </div>
-          <div class="Product">
-            <img src="home-page-images/Voltarene.png"   alt="Voltarene">
-            <h6 class="bold1">Voltarene</h6>
-            <p class="grey">$18.00  <span>$12.00</span></p>
-            <button>➔</button>
-          </div>
-        </div>
-        <div class="categories">
-          <div class="Pain item m">
-            <img src="home-page-images/pain.jpeg" alt="Pain-relievers">
-            <h3>Pain Relievers</h3>
-            <p class="grey margin">Pain relievers help ease headaches, muscle aches, and joint pain. We offer safe and effective options to support your well-being.</p>
-            <a href="#">Exolore category►</a>
-          </div>
-          <div class="Allergy item m">
-            <img src="home-page-images/allergic.jpeg" alt="allergy">
-            <h3>Allergy Medications</h3>
-            <p class="grey margin">Allergy medication helps relieve sneezing, itching, and congestion. We offer trusted solutions for fast and effective relief.</p>
-            <a href="#">Explore category►</a>
-          </div>
-          <div class="Dental item m">
-            <img src="home-page-images/Dental.jpeg" alt="dental">
-            <h3>Dentalcare</h3>
-            <p class="grey margin">Maintain a healthy smile with our dental care products, from toothpaste to mouthwash, for strong teeth and fresh breath.</p>
-            <a href="#">Explore category►</a>
-          </div>
-          <div class="Aid item m">
-            <img src="home-page-images/medical aid.jpeg" alt="first-aid">
-            <h3>First Aid Sup</h3>
-            <p class="grey margin">Be prepared for any minor injury with our first aid supplies, including bandages, antiseptics, and wound care essentials.</p>
-            <a href="#">Exlore category►</a>
-          </div>
-        </div>
-      </section>
+
+        <div class="line-of-products"></div>
+<h5 class="trying"><span>Our</span> Categories</h5>
+<div class="grid-container">
+    <div class="grid-item item1">
+      <h2>All Product</h2>
+      <div class="flex-category">  
+          <img src="line_of_product/Pharmacy.jpg" alt="Parmacy">
+          <p>At our pharmacy store, we offer a wide range of high-quality health and wellness products designed to meet your everyday needs. From trusted pain relievers and allergy solutions to essential first aid items, dental care, supplements, and cosmetics — each product is carefully selected to support your health, comfort, and confidence. Whether you're looking for fast relief, daily care, or beauty essentials, we’ve got you covered with safe and effective solutions.</p> 
+      </div>
+      <button class="Visit"><a href="#">Visit Now </a></button>
+    </div>
+    <div class="grid-item">
+      <h2>Pain Relievers</h2>
+      <p>Ease discomfort quickly with our effective pain relief options. Perfect for headaches, muscle pain, and more.</p> 
+      <button class="Visit"><a href="#">Visit Now </a></button>
+    </div>
+    <div class="grid-item">
+      <h2>Allergy Medication</h2>
+      <p>Stay comfortable all year round with our allergy solutions. Fast relief from sneezing, itching, and congestion.</p>
+      <button class="Visit"><a href="#">Visit Now </a></button>
+    </div>
+    <div class="grid-item">
+      <h2>Dental Care</h2>
+      <p>Keep your smile bright and healthy with our dental essentials. Shop toothpaste, brushes, and more.</p>
+
+      <button class="Visit"><a href="#">Visit Now </a></button>
+    </div>
+    <div class="grid-item">
+      <h2>First Aid Sup</h2>
+      <p>Be ready for any minor injury with our first aid products. Clean, protect, and heal with confidence.</p>
+      <button class="Visit"><a href="#">Visit Now </a></button>
+    </div>
+    <div class="grid-item item6">
+      <h2>Cosmetic Product</h2>
+      <p>Discover beauty and skincare products that care for you. Look good and feel great every day.</p>
+      <button class="Visit"><a href="#">Visit Now </a></button>
+    </div>
+  </div>
+        </section>
       <section class="why">
         <div class="why-us">
             <h5>Why us</h5>
@@ -262,69 +261,74 @@
         </ul>
 
       </section>
-      <section class="Featured Team">
-        <div class="Essentials">
-          <h5>Team</h5>
-          <div>
-            <h2 class="bold">Importance of Immunisation <span>Vaccination</span></h2>
-            <p class='margin grey'>Vaccination is crucial for preventing diseases, protecting communities, and saving lives.</p>
-          </div>
-        <button>Vaccinate now ➔</button>
-        </div>
-        <div id="table">
-    <div class="container1">
-        <table>
-            <tr>
-                <th>Vaccine</th>
-                <th>Effectiveness (%)</th>
-                <th>Protection Duration</th>
-                <th>Doses Required</th>
-            </tr>
-            <tr>
-                <td>COVID-19 (mRNA)</td>
-                <td>95%</td>
-                <td>6-12 months</td>
-                <td>2 + boosters</td>
-            </tr>
-            <tr>
-                <td>Flu Vaccine</td>
-                <td>40-60%</td>
-                <td>1 year</td>
-                <td>1 annually</td>
-            </tr>
-            <tr>
-                <td>Hepatitis B</td>
-                <td>90%</td>
-                <td>Lifetime</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <td>Measles</td>
-                <td>97%</td>
-                <td>Lifetime</td>
-                <td>2</td>
-            </tr>
-            <tr>
-                <td>Polio</td>
-                <td>99%</td>
-                <td>Lifetime</td>
-                <td>4</td>
-            </tr>
-            <tr>
-                <td>HPV</td>
-                <td>97%</td>
-                <td>Lifetime</td>
-                <td>2-3</td>
-            </tr>
-        </table>
-        <div class="video">
-            <iframe width="400" height="250" src="home-page-images/The Importance of Vaccinations.mp4" frameborder="0" allowfullscreen></iframe>
-        </div>
+<section class="featured vaccination-section">
+  <div class="section-header">
+    <h5>Vaccination</h5>
+    <div>
+      <h2 class="bold">Importance of Immunisation <span>Vaccination</span></h2>
+      <p class='margin grey'>Vaccination is crucial for preventing diseases, protecting communities, and saving lives.</p>
     </div>
-</div>
-        
-      </section>
-   <section class="Featured">
+    <button class="action-btn">Vaccinate now ➔</button>
+  </div>
+  
+  <div class="table-video-container">
+    <div class="table-wrapper">
+      <h3>Vaccine Information</h3>
+      <table class="vaccine-table">
+        <tr>
+          <th>Vaccine</th>
+          <th>Effectiveness (%)</th>
+          <th>Protection Duration</th>
+          <th>Doses Required</th>
+        </tr>
+        <tr>
+          <td>COVID-19 (mRNA)</td>
+          <td>95%</td>
+          <td>6-12 months</td>
+          <td>2 + boosters</td>
+        </tr>
+        <tr>
+          <td>Flu Vaccine</td>
+          <td>40-60%</td>
+          <td>1 year</td>
+          <td>1 annually</td>
+        </tr>
+        <tr>
+          <td>Hepatitis B</td>
+          <td>90%</td>
+          <td>Lifetime</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>Measles</td>
+          <td>97%</td>
+          <td>Lifetime</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Polio</td>
+          <td>99%</td>
+          <td>Lifetime</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>HPV</td>
+          <td>97%</td>
+          <td>Lifetime</td>
+          <td>2-3</td>
+        </tr>
+      </table>
+    </div>
+    
+    <div class="video-wrapper">
+      <h3>Why Vaccines Matter</h3>
+      <div class="video-container">
+        <iframe src="home-page-images/The Importance of Vaccinations.mp4" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>   
+      <section class="Featured">
         <div class="Essentials">
         <h5>Review</h5>
         <div>
@@ -367,50 +371,68 @@
    </section>
    
    
-    <footer>
-        <div class="first">
-            <div class="name">
-            <div>
-                <img src="home-page-images/logo.png" alt="Pharmacy_logo">
-                <div class="fin"> 
-                    <p class="pharamacy">Pharmacy<p>
-                    <p class="store">store.<p>
-                </div>
-              </div>
-                <p class="Icon arrow"><a href="#nav">↑</a></p>
-            </div>
-            
-                
-                 
+</main>
+<footer class="modern-footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="brand-logo">
+        <img src="home-page-images/logo.png" alt="Pharmacy_logo">
+        <div class="brand-text">
+          <p class="brand-name">Pharmacy</p>
+          <p class="brand-tagline">store.</p>
         </div>
-        <div class="container">
-            <ol class="Company">
-                <li>Company</li>
-               <div class="element">
-                <li>About Us</li>
-                <li>Products</li>
-                <li>Services</li>
-                <li>Blog & News</li>
-               </div>        
-            </ol>
-            <ul class="Resources">
-                <li>Resources</li>
-                <div class="element">
-                    <li>Educational</li>
-                    <li>Mental Health Resources</li>
-                    <li>Nutrition</li>
-                    <li>Medication Guides</li>   
-                </div> 
-                
-            </ul>
-        </div>
-        <div class="bottom">
-            <p>Copyright © 2025 Pharmacy Store | Design by 5dheeeee</p>
-            <p>Terms of Use |Privacy Policy</p>
-        </div>
-   </footer>
+      </div>
+      <p class="footer-motto">Your health is our priority</p>
+      <div class="social-icons">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-twitter"></i></a>
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
     
-    </main>
+    <div class="footer-links">
+      <div class="link-column">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Blog & News</a></li>
+        </ul>
+      </div>
+      
+      <div class="link-column">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Educational</a></li>
+          <li><a href="#">Mental Health Resources</a></li>
+          <li><a href="#">Nutrition</a></li>
+          <li><a href="#">Medication Guides</a></li>
+        </ul>
+      </div>
+      
+      <div class="link-column">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><i class="bi bi-telephone"></i> +21620653923</li>
+          <li><i class="bi bi-envelope"></i> Mypharmacyweb@gmail.com</li>
+          <li><i class="bi bi-geo-alt"></i> 123 Health Street, Medical City</li>
+        </ul>
+      </div>
+    </div>
+  </div>
   
+  <div class="footer-bottom">
+    <p>Copyright © 2025 Pharmacy Store | Design by 5dheeeee</p>
+    <div class="legal-links">
+      <a href="#">Terms of Use</a>
+      <span>|</span>
+      <a href="#">Privacy Policy</a>
+    </div>
+    <a href="#" class="back-to-top"><i class="bi bi-arrow-up"></i></a>
+  </div>
+</footer> 
+<script src="index.js"></script>
 </body>
 </html>

@@ -11,25 +11,35 @@
     <header>
       <nav>
         <div class="logo">
-          <img src="home-page-images/logo.png" alt="pharmacy_logo.png">
+          <i class="bi bi-capsule-pill"></i>
           <div class="description">
             <p>Pharmacy</p>
-            <p class="simple">Shop</p>
-         </div>
-
+            <p class="decoration">Shop</p> </div>
         </div>
-        <ul>
+        <div class="links-wrapper">
+          <div class="links">
+            <ul>
            <li><a href="../Home/index.html">Home</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="../Contact_us/form_recrutement.html">Contact Us</a></li>
-          <li class="log-in"><a href="../login/login.html">Log in/Sign-Up</a></li>
-        </ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="../Products/index.html">Products</a></li>
+              <li class="actual"><a href="../Contact_us/form_recrutement.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="search">
+          <div class="search-cotainner search-bar">
+            <form>
+              <input type="text" placeholder="search for anything...">
+              <button type="submit" class="submit"><i class="bi bi-search"></i></button>
+            </form>
+              <button class="login icon"><a href="#"><i class="bi bi-box-arrow-in-right"></i></a></button>
+              <button class="login icon"><a href="#"><i class="bi bi-bag-dash"></i></a></button>
+          </div>
+        </div>
+
       </nav>
-    </header>
-    <section class="title">
+    </header>    <section class="title">
       <h1> We've got an <span class="oval">entire</span> team dedicated <br>to supporting you and your health</h1>
       <p>Get help 24/7,with our award-winning support network of health experts</p> 
       <ul> 
@@ -123,7 +133,7 @@
     </div>
     </section>
     <section class="purpose">
-        <h2>Contact Us for Reclamation & Advice.</h2>
+        <h2>Contact Us fors <span> Reclamation </span> & <span>Advice </span>.</h2>
         <p>Please fill out the form below to contact us.</p>
     </section>
     <main class="display">
@@ -188,7 +198,6 @@
             <textarea id="reclamation-message" name="reclamation-message" rows="4" placeholder=""></textarea>
             <label for="reclamation-message">Message:</label><br><br>
           </div>
-            <label for="reclamation-attachment">Upload Attachment (PDF/JPG only):</label>
             <input type="file" id="reclamation-attachment" name="reclamation-attachment" accept=".pdf, .jpg">
           </section>
            <section class="advisce">
@@ -210,7 +219,6 @@
             <textarea id="advice-message" name="advice-message" rows="4" placeholder=" "></textarea>
             <label for="advice-message">Your question</label>
         </div>
-            <label for="advice-attachment">Upload Attachment (PDF/JPG only):</label>
             <input type="file" id="advice-attachment" name="advice-attachment" accept=".pdf, .jpg"><br><br>
 
             <button type="submit">Send Message</button>
