@@ -1,3 +1,11 @@
+<?php
+require_once '../login/config.php';
+
+// Get user information if logged in
+$logged_in = isset($_SESSION['user_id']);
+$username = $logged_in ? $_SESSION['username'] : '';
+$user_type = $logged_in ? $_SESSION['user_type'] : '';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +15,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
-    
 </head>
 <body>
     <head>
@@ -21,9 +28,68 @@
         <div class="links-wrapper">
           <div class="links">
             <ul>
-              <li class="actual"><a href="../Home/index.html">Home</a></li>
+              <li class="actual"><a href="index.php">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li><?php
+require_once 'config.php';
+
+// Get user information if logged in
+$logged_in = isset($_SESSION['user_id']);
+$username = $logged_in ? $_SESSION['username'] : '';
+$user_type = $logged_in ? $_SESSION['user_type'] : '';
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <head>
+      <nav>
+        <div class="logo">
+          <i class="bi bi-capsule-pill"></i>
+          <div class="description">
+            <p>Pharmacy</p>
+            <p class="decoration">Shop</p> </div>
+        </div>
+        <div class="links-wrapper">
+          <div class="links">
+            <ul>
+              <li class="actual"><a href="index.php">Home</a></li>
               <li><a href="#">About Us</a></li>
               <li><a href="#">Services</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="search">
+          <div class="search-cotainner search-bar">
+            <form>
+              <input type="text" placeholder="search for anything...">
+              <button type="submit" class="submit"><i class="bi bi-search"></i></button>
+            </form>
+            <?php if ($logged_in): ?>
+              <div class="user-menu">
+                <span>Welcome, <?php echo htmlspecialchars($username); ?></span>
+                <a href="logout.php" class="login icon"><i class="bi bi-box-arrow-right"></i></a>
+                <?php if ($user_type === 'admin'): ?>
+                  <a href="admin.php" class="login icon"><i class="bi bi-speedometer2"></i></a>
+                <?php endif; ?>
+              </div>
+            <?php else: ?>
+              <button class="login icon"><a href="login.php"><i class="bi bi-box-arrow-in-right"></i></a></button>
+            <?php endif; ?>
+            <button class="login icon"><a href="#"><i class="bi bi-bag-dash"></i></a></button>
+          </div>
+        </div>
+      </nav>
+    </head>  
               <li><a href="../Products/index.html">Products</a></li>
               <li><a href="../Contact_us/form_recrutement.html">Contact Us</a></li>
             </ul>
@@ -35,11 +101,20 @@
               <input type="text" placeholder="search for anything...">
               <button type="submit" class="submit"><i class="bi bi-search"></i></button>
             </form>
-              <button class="login icon"><a href="#"><i class="bi bi-box-arrow-in-right"></i></a></button>
-              <button class="login icon"><a href="#"><i class="bi bi-bag-dash"></i></a></button>
+            <?php if ($logged_in): ?>
+              <div class="user-menu">
+                <span>Welcome, <?php echo htmlspecialchars($username); ?></span>
+                <a href="logout.php" class="login icon"><i class="bi bi-box-arrow-right"></i></a>
+                <?php if ($user_type === 'admin'): ?>
+                  <a href="../Admin/admin.php" class="login icon"><i class="bi bi-speedometer2"></i></a>
+                <?php endif; ?>
+              </div>
+            <?php else: ?>
+              <button class="login icon"><a href="../login/login.php"><i class="bi bi-box-arrow-in-right"></i></a></button>
+            <?php endif; ?>
+            <button class="login icon"><a href="#"><i class="bi bi-bag-dash"></i></a></button>
           </div>
         </div>
-
       </nav>
     </head>   
     <main>
